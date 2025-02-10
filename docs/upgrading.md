@@ -45,7 +45,7 @@ Next.js は、JavaScript/TypeScript のコンパイルに Rust ベースのコ�
 Next.js は、[カスタム Babel 設定](/docs/advanced-features/customizing-babel-config)を持つアプリケーションとの完全な後方互換性を提供します。
 Next.js がデフォルトで処理する styled-jsx や、`getStaticProps` / `getStaticPaths` / `getServerSideProps` のツリーシェイキングなどの変換は、すべて Rust に移植されました。
 
-アプリケーションが Babel の設定をカスタマイズしている場合、Next.js は自動的に JavaScript/Typescript のコンパイルに SWC を使わず、Next.js 11 と同じように Babel を使うようにフォールバックされます。
+アプリケーションが Babel の設定をカスタマイズしている場合、Next.js は自動的に JavaScript/TypeScript のコンパイルに SWC を使わず、Next.js 11 と同じように Babel を使うようにフォールバックされます。
 
 現在、カスタム Babel 変換を必要とする外部ライブラリとの統合の多くは、近い将来で Rust ベースの SWC 変換に移植される予定です。これには以下が含まれますが、これらに限定されるものではありません:
 
@@ -346,7 +346,7 @@ Next.js は `@zeit/next-typescript` の使用を無視するようになり、�
 
 [`fork-ts-checker-webpack-plugin`](https://github.com/Realytics/fork-ts-checker-webpack-plugin/issues) の使用も `next.config.js` から削除されるべきです。
 
-Typescript の定義は `next` パッケージと共に配布されるため、衝突する `@types/next` をアンインストールする必要があります。
+TypeScript の定義は `next` パッケージと共に配布されるため、衝突する `@types/next` をアンインストールする必要があります。
 
 以下の型は異なります:
 
